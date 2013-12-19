@@ -25,6 +25,14 @@ $ ->
 
 			wrapper.find('#ol-layer')
 				.on 'click', (ev) ->
+					$(document).trigger('overlay:closing')
+
+			$(document)
+				.keyup((ev) ->
+					if ev.keyCode is 27
+						$(document).trigger('overlay:closing')
+				).on('overlay:closing', ->
 					wrapper.fadeOut(200, ->
 					  wrapper.remove()
 					)
+				)
