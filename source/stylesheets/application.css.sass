@@ -1,0 +1,30 @@
+@import compass/reset
+@import compass/css3
+
+#header, #example, #usage
+  width: 700px
+  margin: 20px auto 0px
+
+button
+  $c: #7DD8DB
+  +border-radius(3px)
+  +box-shadow(rgba(0, 0, 0, .1) -1px 1px 0px, rgba(255, 255, 255, .2) -1px 1px 0px inset)
+  +text-shadow(rgba(0, 0, 0, .1) 1px -1px 0px)
+  padding: 10px 20px
+  background-color: $c
+  color: white
+  border: 1px solid darken($c, 10%)
+
+#header
+  h1
+    font-size: 24px
+    font-weight: bold
+
+  p
+    line-height: 1.8
+
+#example
+  h3
+    font-size: 20px
+    padding-bottom: 5px
+    border-bottom: 1px dotted #cccccc

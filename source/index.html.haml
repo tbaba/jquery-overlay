@@ -1,8 +1,43 @@
 ---
-title: jquery-overlay
+title: jquery-overlay.js
 ---
 
-%button{ class: 'ol-trigger' } くりっくしやがれ！
+%header#header
+  %h1 jquery-overlay.js
+  %p The simplest modal window library with jQuery.
 
-.ol-content
-  %p ほ、ほげえええええええ
+#example
+  .example-1
+    %h3
+      Assign class name of trigger and content
+
+    .inner
+      %button{ class: 'trigger' } This is test!
+
+      .content
+        %p This is test!
+
+  .example-2
+    %h3
+      big inner
+
+    .inner
+      %button{ class: 'trigger-2' } This is test 2!
+
+      .content-2
+        %p This is test! This is test! This is test! This is test! This is test! This is test! This is test!
+        %p This is test! This is test! This is test! This is test! This is test! This is test! This is test!
+        %p This is test! This is test! This is test! This is test! This is test! This is test! This is test!
+
+#usage
+  %h2 Usage
+
+  .inner
+    %p
+      Set class name of inner contents and trigger object.
+
+    %dl
+      %dt inner contents
+      %dd This is wanted to show as modal window
+      %dt trigger
+      %dd This is key to show modal window
